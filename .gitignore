@@ -3,6 +3,6 @@
 node_modules/
 
 # other files....
-greeting.txt
+routes/greeting.txt
 routes/learn_moduls.js
 routes/notes.js
