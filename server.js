@@ -322,3 +322,15 @@ const jsonStringfied = JSON.stringify(objectToConvert);
 console.log(jsonStringfied);
 
 */
+
+
+/*
+{
+       "name": "pankaj",
+        "work": "chef",
+        "mobile": "123-456-7890",
+        "email": "alice@example.com",
+        "address": "123 Main st, City",
+        "salary": 60000
+}
+*/

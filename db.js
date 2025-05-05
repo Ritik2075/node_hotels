@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 //  define the mongodb connection url
-const mongoURL = 'mongodb://localhost:27017/hotel' // Replace hotel with your database name
-
+// const mongoURL = 'mongodb://localhost:27017/hotel' // Replace hotel with your database name
+const mongoURL= 'mongodb+srv://helloritik:Hotels1234@hotels.jckwrfw.mongodb.net/'
 // set up MongoDB connection
 
 mongoose.connect(mongoURL);
@@ -42,3 +42,6 @@ db.on('close', () => {
 
 // Export the database connection
 module.exports = db;
+
+
+
