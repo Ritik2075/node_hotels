@@ -14,8 +14,8 @@ app.get('/',(req, res)=> {
     res.send('Welcome to Our Hotel')
   })
   
-// const Person = require('./models/person');
-// const MenuItem = require('./models/menu');
+const Person = require('./models/person');
+const MenuItem = require('./models/menu');
 
 
 
