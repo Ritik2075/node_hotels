@@ -1,8 +1,8 @@
 # Ignore node module directory and greeting.txt
 # and learnmodul.js
 node_modules/
-
+.env
 # other files....
-routes/greeting.txt
-routes/learn_moduls.js
-routes/notes.js
+greeting.txt
+learn_moduls.js
+notes.js

@@ -1,18 +1,22 @@
 const express = require('express');
 const app = express();
 const db = require('./db');
+require('dotenv').config();
 
 const bodyParser=require('body-parser');
 app.use(bodyParser.json()); //req.body
+const PORT = process.env.PORT || 3000;
 
-const Person = require('./models/person');
-const MenuItem = require('./models/menu');
 
 //  this below uncommentd code is the free code thats come together
 //  with express module of npm see that on that express page 
 app.get('/',(req, res)=> {
-  res.send('Welcome to Our Hotel')
-})
+    res.send('Welcome to Our Hotel')
+  })
+  
+// const Person = require('./models/person');
+// const MenuItem = require('./models/menu');
+
 
 
 /*try{
@@ -54,7 +58,8 @@ app.get('/person',async(req,res)=>{
           //use the Mongoose model to fetch all person form the database.
           const response = await Person.find();
           console.log('data find');
-          // send the list of person as Json response
+          //
+const PORT = process.env.PORT || 3000; send the list of person as Json response
           res.status(200).json(response)
     }
     catch(err){
@@ -139,7 +144,7 @@ app.get('/menu',async(req,res)=>{
 
 
 
-// Import the person router files
+// Import the  router files
 const personRoutes = require('./routes/personroutes');
 const menuItemRoutes = require('./routes/menuItemRoutes');
 
@@ -147,7 +152,8 @@ const menuItemRoutes = require('./routes/menuItemRoutes');
 app.use('/person',personRoutes);
 app.use('/menu',menuItemRoutes);
 
-app.listen(3000,()=>{
+
+app.listen(PORT,()=>{
     console.log('listening on port 3000');
 })
 
